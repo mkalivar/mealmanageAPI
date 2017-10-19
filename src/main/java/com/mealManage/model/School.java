@@ -1,6 +1,8 @@
 package com.mealManage.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,7 +11,7 @@ import javax.persistence.Table;
 public class School {
 
 	@Id
-	//@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer schoolId;
 	private String schoolName;
 	private String schoolAddress;
