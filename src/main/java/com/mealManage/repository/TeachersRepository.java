@@ -9,6 +9,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.mealManage.model.Teachers;
 
 @RepositoryRestResource(collectionResourceRel = "teachers", path = "teachers")
-public interface TeachersRepository extends PagingAndSortingRepository<Teachers, Long>{
-	List<Teachers> findBySchoolId(@Param("schoolId") String schoolId);
+public interface TeachersRepository extends PagingAndSortingRepository<Teachers, Integer>{
+	List<Teachers> findBySchoolId(@Param("schoolId") Integer schoolId);
 }

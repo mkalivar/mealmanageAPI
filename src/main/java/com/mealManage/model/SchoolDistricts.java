@@ -1,5 +1,6 @@
 package com.mealManage.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,9 +16,14 @@ public class SchoolDistricts {
     private String schoolDistrictName;
     private String city;
     private String county;
+    
+    @Column(name="State")
     private String state;
-
-	public Integer getSchoolDistrictId() {
+    
+    @Column(name="SchoolDistrictsNo")
+    private Integer schoolDistrictsNo;
+	
+    public Integer getSchoolDistrictId() {
 		return schoolDistrictId;
 	}
 
@@ -55,6 +61,14 @@ public class SchoolDistricts {
 
 	public void setState(String state) {
 		this.state = state;
+	}
+
+	public Integer getSchoolDistrictsNo() {
+		return schoolDistrictsNo;
+	}
+
+	public void setSchoolDistrictsNo(Integer schoolDistrictsNo) {
+		this.schoolDistrictsNo = schoolDistrictsNo;
 	}
     
 	

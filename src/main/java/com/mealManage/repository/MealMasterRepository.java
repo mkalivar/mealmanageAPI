@@ -9,6 +9,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.mealManage.model.MealMaster;
 
 @RepositoryRestResource(collectionResourceRel = "mealMaster", path = "mealMaster")
-public interface MealMasterRepository extends PagingAndSortingRepository<MealMaster, Long>{
+public interface MealMasterRepository extends PagingAndSortingRepository<MealMaster, String>{
 	List<MealMaster> findByMealName(@Param("mealName") String mealName);
 }

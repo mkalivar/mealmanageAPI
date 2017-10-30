@@ -12,6 +12,6 @@ import com.mealManage.model.SchoolDistricts;
 // CRUD refers Create, Read, Update, Delete
 
 @RepositoryRestResource(collectionResourceRel = "schoolDistricts", path = "schoolDistricts")
-public interface SchoolDistrictRepository extends PagingAndSortingRepository<SchoolDistricts, Long> {
-	List<SchoolDistricts> findByState(@Param("state") String state);
+public interface SchoolDistrictRepository extends PagingAndSortingRepository<SchoolDistricts, String> {
+	List<SchoolDistricts> findByCounty(@Param("county") String county);
 }

@@ -10,12 +10,12 @@
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/SchoolRepository.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/MealTypeRepository.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/SchoolClasses.java
+/Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/UsersRepository.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/HolidaysRepository.java
-/Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/ParentsRepository.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/RealNamingStrategyImpl.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/Teachers.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/SchoolDistrictRepository.java
-/Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/Parents.java
+/Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/Users.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/Application.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/MealSelect.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/Holidays.java

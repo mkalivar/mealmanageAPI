@@ -10,6 +10,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.mealManage.model.MealSelect;
 
 @RepositoryRestResource(collectionResourceRel = "mealSelect", path = "mealSelect")
-public interface MealSelectRepository extends PagingAndSortingRepository<MealSelect, Long>{
+public interface MealSelectRepository extends PagingAndSortingRepository<MealSelect, Date>{
 	List<MealSelect> findByMealDate(@Param("mealDate") Date mealDate);
 }

@@ -14,12 +14,17 @@
     </parent>
 
     <dependencies>
-        <!-- 
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-         -->
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency> -->
+        
         
         <!-- Data Rest (No need to write POST, PUT etc...) -->
         
@@ -61,5 +66,5 @@
             </plugin>
         </plugins>
     </build>
-
+	
 </project>
