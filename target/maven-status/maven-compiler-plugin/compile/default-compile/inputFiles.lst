@@ -2,6 +2,7 @@
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/School.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/ClassPupil.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/MealSelectRepository.java
+/Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/WebConfig.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/model/SchoolDistricts.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/TeachersRepository.java
 /Users/manojkalivarapu/git/MealManagementAPI/src/main/java/com/mealManage/repository/SchoolClassesRepository.java

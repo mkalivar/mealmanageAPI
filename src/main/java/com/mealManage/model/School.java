@@ -16,6 +16,7 @@ public class School {
 	private String schoolName;
 	private String schoolAddress;
 	private Integer schoolDistrictId;
+	private String schoolSubDomain;
 	
 	public Integer getSchoolId() {
 		return schoolId;
@@ -41,6 +42,13 @@ public class School {
 	public void setSchoolDistrictId(Integer schoolDistrictId) {
 		this.schoolDistrictId = schoolDistrictId;
 	}
+	public String getSchoolSubDomain() {
+		return schoolSubDomain;
+	}
+	public void setSchoolSubDomain(String schoolSubDomain) {
+		this.schoolSubDomain = schoolSubDomain;
+	}
+	
 	
 	
 }
