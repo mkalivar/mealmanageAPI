@@ -46,4 +46,4 @@ Thumbs.db
 *~
 *.bak
 *.swp
-/target/
+target/
