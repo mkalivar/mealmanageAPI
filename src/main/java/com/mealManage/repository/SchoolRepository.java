@@ -11,4 +11,5 @@ import com.mealManage.model.School;
 @RepositoryRestResource(collectionResourceRel = "school", path = "school")
 public interface SchoolRepository extends PagingAndSortingRepository<School, Integer>{
 	List<School> findBySchoolDistrictId(@Param("schoolDistrictId") Integer schoolDistrictId);
+	List<School> findBySchoolSubDomain(@Param("schoolSubDomain") String schoolSubDomain);
 }
