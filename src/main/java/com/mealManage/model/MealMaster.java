@@ -21,6 +21,7 @@ public class MealMaster {
 	private Integer schoolId;
 	private String mealImage;
 	private String mealShortDesc;
+	private String mealAssignedDays;
 	
 	public Integer getMealId() {
 		return mealId;
@@ -76,6 +77,11 @@ public class MealMaster {
 	public void setMealShortDesc(String mealShortDesc) {
 		this.mealShortDesc = mealShortDesc;
 	}
-	
+	public String getMealAssignedDays() {
+		return mealAssignedDays;
+	}
+	public void setMealAssignedDays(String mealAssignedDays) {
+		this.mealAssignedDays = mealAssignedDays;
+	}
 	
 }
