@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -26,6 +27,16 @@ public class School {
 	private String schoolSubDomain;
 	private String type;
 	
+	@OneToOne(mappedBy = "school")
+    private Users users;
+	
+	public School() {
+		
+	}
+	
+	public School(String schoolSubDomain) {
+		this.schoolSubDomain = schoolSubDomain;
+	}
 	
 	public Integer getSchoolId() {
 		return schoolId;
@@ -92,6 +103,12 @@ public class School {
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+	public Users getUsers() {
+		return users;
+	}
+	public void setUsers(Users users) {
+		this.users = users;
 	}
 	
 }

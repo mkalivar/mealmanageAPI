@@ -10,6 +10,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.mealManage.model.Holidays;
 
 @RepositoryRestResource(collectionResourceRel = "holidays", path = "holidays")
-public interface HolidaysRepository extends PagingAndSortingRepository<Holidays, Date>{
+public interface HolidaysRepository extends PagingAndSortingRepository<Holidays, Integer>{
 	List<Holidays> findByHolidayFromDt(@Param("holidayFromDt") Date HolidayFromDt);
 }
