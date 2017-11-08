@@ -11,4 +11,5 @@ import com.mealManage.model.Teachers;
 @RepositoryRestResource(collectionResourceRel = "teachers", path = "teachers")
 public interface TeachersRepository extends PagingAndSortingRepository<Teachers, Integer>{
 	List<Teachers> findBySchoolId(@Param("schoolId") Integer schoolId);
+	List<Teachers> findByTeacherEmail(@Param("teacherEmail") String teacherEmail);
 }

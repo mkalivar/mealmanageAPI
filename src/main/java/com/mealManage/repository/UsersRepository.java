@@ -12,4 +12,6 @@ import com.mealManage.model.Users;
 public interface UsersRepository extends PagingAndSortingRepository<Users, Integer>{
 	List<Users> findByLastName(@Param("lastName") String lastName);
 	List<Users> findByRole(@Param("role") String role);
+	List<Users> findByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+	Users findByUsername(@Param("username") String username);
 }
