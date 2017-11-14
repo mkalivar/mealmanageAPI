@@ -20,7 +20,7 @@ public class MealSelect {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer mealSelectedId;
 	private Integer pupilId;
-	private Date mealDate;
+	private String mealDate;
 	private Integer mealID;
 	private Integer classId;
 	
@@ -43,10 +43,10 @@ public class MealSelect {
 	public void setPupilId(Integer pupilId) {
 		this.pupilId = pupilId;
 	}
-	public Date getMealDate() {
+	public String getMealDate() {
 		return mealDate;
 	}
-	public void setMealDate(Date mealDate) {
+	public void setMealDate(String mealDate) {
 		this.mealDate = mealDate;
 	}
 	public Integer getMealID() {

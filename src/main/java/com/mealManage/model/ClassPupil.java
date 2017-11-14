@@ -16,6 +16,7 @@ public class ClassPupil {
 	private String pupilFirstName;
 	private String pupilLastName;
 	private Integer classId;
+	private String className;
 	private Integer parentId;
 	
 	public Integer getPupilId() {
@@ -48,7 +49,10 @@ public class ClassPupil {
 	public void setParentId(Integer parentId) {
 		this.parentId = parentId;
 	}
-	
-	
-	
+	public String getClassName() {
+		return className;
+	}
+	public void setClassName(String className) {
+		this.className = className;
+	}
 }
