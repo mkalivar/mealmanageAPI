@@ -12,4 +12,6 @@ import com.mealManage.model.ClassPupil;
 @RepositoryRestResource(collectionResourceRel = "classPupil", path = "classPupil")
 public interface ClassPupilRepository extends PagingAndSortingRepository<ClassPupil, Integer>{
 	List<ClassPupil> findByParentId(@Param("parentId") Integer parentId);
+	List<ClassPupil> findByClassId(@Param("classId") Integer classId);
+	List<ClassPupil> findBySchoolId(@Param("schoolId") Integer schoolId);
 }

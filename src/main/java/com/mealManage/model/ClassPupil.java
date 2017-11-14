@@ -18,6 +18,7 @@ public class ClassPupil {
 	private Integer classId;
 	private String className;
 	private Integer parentId;
+	private Integer schoolId;
 	
 	public Integer getPupilId() {
 		return pupilId;
@@ -55,4 +56,10 @@ public class ClassPupil {
 	public void setClassName(String className) {
 		this.className = className;
 	}
-}
+	public Integer getSchoolId() {
+		return schoolId;
+	}
+	public void setSchoolId(Integer schoolId) {
+		this.schoolId = schoolId;
+	}
+	}
