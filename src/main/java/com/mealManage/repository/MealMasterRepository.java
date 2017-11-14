@@ -14,4 +14,5 @@ public interface MealMasterRepository extends PagingAndSortingRepository<MealMas
 	List<MealMaster> findByMealName(@Param("mealName") String mealName);
 	@Query("SELECT m FROM MealMaster m WHERE m.mealAssignedDays LIKE CONCAT('%',:mealAssignedDays,'%')")
 	List<MealMaster> findByMealAssignedDaysLike(@Param("mealAssignedDays") String mealAssignedDays);
+	List<MealMaster> findBySchoolId(@Param("schoolId") Integer schoolId);
 }
