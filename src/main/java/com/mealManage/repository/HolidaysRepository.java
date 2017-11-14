@@ -11,5 +11,8 @@ import com.mealManage.model.Holidays;
 
 @RepositoryRestResource(collectionResourceRel = "holidays", path = "holidays")
 public interface HolidaysRepository extends PagingAndSortingRepository<Holidays, Integer>{
-	List<Holidays> findByHolidayFromDt(@Param("holidayFromDt") Date HolidayFromDt);
+	List<Holidays> findByHolidayFromDt(@Param("holidayFromDt") String HolidayFromDt);
+	List<Holidays> findBySchoolId(@Param("schoolId") Integer schoolId);
+	List<Holidays> findBySchoolIdAndHolidayFromDt(@Param("schoolId") Integer schoolId, 
+												 @Param("holidayFromDt") String HolidayFromDt);
 }

@@ -1,7 +1,5 @@
 package com.mealManage.model;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,8 +14,9 @@ public class Holidays {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer holidayId;
 	private String holidayName;
-	private Date holidayFromDt;
-	private Date holidayToDt;
+	private String holidayFromDt;
+	private String holidayToDt;
+	private Integer schoolId;
 	
 	public Integer getHolidayId() {
 		return holidayId;
@@ -31,18 +30,22 @@ public class Holidays {
 	public void setHolidayName(String holidayName) {
 		this.holidayName = holidayName;
 	}
-	public Date getHolidayFromDt() {
+	public String getHolidayFromDt() {
 		return holidayFromDt;
 	}
-	public void setHolidayFromDt(Date holidayFromDt) {
+	public void setHolidayFromDt(String holidayFromDt) {
 		this.holidayFromDt = holidayFromDt;
 	}
-	public Date getHolidayToDt() {
+	public String getHolidayToDt() {
 		return holidayToDt;
 	}
-	public void setHolidayToDt(Date holidayToDt) {
+	public void setHolidayToDt(String holidayToDt) {
 		this.holidayToDt = holidayToDt;
 	}
-	
-	
+	public Integer getSchoolId() {
+		return schoolId;
+	}
+	public void setSchoolId(Integer schoolId) {
+		this.schoolId = schoolId;
+	}
 }
