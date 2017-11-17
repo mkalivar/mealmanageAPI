@@ -18,6 +18,19 @@ public class Teachers {
 	private String teacherToken;
 	private String teacherClasses;
 	private Integer schoolId;
+	
+	public Teachers() {
+		
+	}
+	public Teachers(String teacherName, String teacherEmail, String teacherToken, String teacherClasses,
+			Integer schoolId) {
+		this.teacherName = teacherName;
+		this.teacherEmail = teacherEmail;
+		this.teacherToken = teacherToken;
+		this.teacherClasses = teacherClasses;
+		this.schoolId = schoolId;
+	}
+	
 	public Integer getTeacherId() {
 		return teacherId;
 	}

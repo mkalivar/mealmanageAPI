@@ -19,5 +19,6 @@ public interface MealSelectRepository extends PagingAndSortingRepository<MealSel
 			 								 @Param("pupilId") Integer pupilId);
 	
 	@Query("SELECT m FROM MealSelect m WHERE m.pupilId = :pupilId AND m.mealDate BETWEEN :fromDate AND :toDate")
-	List<MealSelect> findByDates(@Param("fromDate") String fromDate, @Param("toDate") String toDate, @Param("pupilId") Integer pupilId);
+	List<MealSelect> findByDates(@Param("fromDate") String fromDate, @Param("toDate") String toDate, 
+								 @Param("pupilId") Integer pupilId);
 }
