@@ -7,6 +7,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
 
 import com.mealManage.model.ClassPupil;
+import com.mealManage.model.ClassPupilView;
 import com.mealManage.model.Holidays;
 import com.mealManage.model.MealMaster;
 import com.mealManage.model.MealSelect;
@@ -28,7 +29,8 @@ public class SpringDataRestConfig {
             public void configureRepositoryRestConfiguration(
                                  RepositoryRestConfiguration config) {
             		config.setDefaultPageSize(Integer.MAX_VALUE);
-                config.exposeIdsFor(ClassPupil.class, Holidays.class,
+                config.exposeIdsFor(ClassPupil.class, ClassPupilView.class, 
+                						Holidays.class,
                 						MealMaster.class, MealSelect.class,
                 						MealType.class, School.class,
                 						SchoolClasses.class,SchoolDistricts.class,
