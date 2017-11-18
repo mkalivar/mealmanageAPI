@@ -11,6 +11,7 @@ import com.mealManage.model.ClassPupilView;
 import com.mealManage.model.Holidays;
 import com.mealManage.model.MealMaster;
 import com.mealManage.model.MealSelect;
+import com.mealManage.model.MealSelectView;
 import com.mealManage.model.MealType;
 import com.mealManage.model.School;
 import com.mealManage.model.SchoolClasses;
@@ -30,7 +31,7 @@ public class SpringDataRestConfig {
                                  RepositoryRestConfiguration config) {
             		config.setDefaultPageSize(Integer.MAX_VALUE);
                 config.exposeIdsFor(ClassPupil.class, ClassPupilView.class, 
-                						Holidays.class,
+                						Holidays.class, MealSelectView.class,
                 						MealMaster.class, MealSelect.class,
                 						MealType.class, School.class,
                 						SchoolClasses.class,SchoolDistricts.class,
