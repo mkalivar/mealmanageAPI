@@ -1,5 +1,7 @@
 package com.mealManage.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,8 +11,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "SchoolClasses")
-public class SchoolClasses {
+public class SchoolClasses implements Serializable{
 
+	private static final long serialVersionUID = -1443649969445390578L;
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer classId;
